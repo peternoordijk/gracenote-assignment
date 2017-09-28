@@ -34,4 +34,8 @@ I chose to use [create-react-app](https://github.com/facebookincubator/create-re
 
 I didn't concern myself too much with React render optimizations. The ```Container.create``` function transforms the class into a [PureComponent](https://facebook.github.io/react/docs/react-api.html#react.purecomponent). Besides, this table doesn't look like it should update itself quite often. I might have changed the ```SportRowView``` into a pure component if that was the case.
 
-As for unit testing I was a little bit too lazy to get that off the ground. I'll just be honest about that :)
+## Unit Tests
+
+I used Jest to write some unit tests. I wanted to mainly test the flux containers as they contain most business logic. However, the Flux utils containers are apparently [not entirely written to create test cases with](https://github.com/facebook/flux/issues/351). I guess the support is low because nobody is really using these tools all that much... Probably not the best choice after all! Also testing the stores is quite a lot harder than testing Redux reducers and actionsCreators for example. So, what we learned from this is not to use Flux utils I guess :)
+
+Anyway, I created a couple of tests for the general views. It's just some basic Enzyme tests...
