@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 small {
+  text-transform: uppercase;
+  color: #777;
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+
+.bronze {
+  color: #CD7F32;
+}
+
+table td, table th {
+  min-width: 100px;
+  padding: .3em 0;
+}
+
+table tbody td, table thead th {
+  text-align: center;
+}
+
+table tbody td:first-child {
+  padding-right: 1em;
+  text-align: left;
+}
+
+table tbody td:last-child, table thead th:last-child {
+  text-align: right;
+}
